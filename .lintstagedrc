@@ -1,0 +1,14 @@
+{
+    "apps/**/*.{js,tsx,json,css}": [
+        "prettier --write"
+    ],
+    "libs/**/*.{js,tsx,json,css}": [
+        "prettier --write"
+    ],
+    "libs/design-system/**/*.{js,tsx,json,css}": [
+        "prettier --write"
+    ],
+    "services/**/*.{js,tsx,json,css}": [
+        "prettier --write"
+    ]
+}
