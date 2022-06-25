@@ -10,6 +10,7 @@ import {
 	TouchableOpacity,
 	Linking,
 } from "react-native";
+import { Button } from "@instagram-clone/design-system";
 
 import Checkmark from "./icons/checkmark.svg";
 import Book from "./icons/book.svg";
@@ -47,6 +48,7 @@ export const App = () => {
 						>
 							Welcome InstagramApp 👋
 						</Text>
+						<Button label="hey there" />
 					</View>
 					<View style={styles.section}>
 						<View style={styles.hero}>
