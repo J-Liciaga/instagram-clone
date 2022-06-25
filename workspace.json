@@ -1,8 +1,10 @@
 {
-  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
-  "version": 2,
-  "projects": {
-    "instagram-app": "apps/instagram-app",
-    "instagram-app-e2e": "apps/instagram-app-e2e"
-  }
+	"$schema": "./node_modules/nx/schemas/workspace-schema.json",
+	"version": 2,
+	"projects": {
+		"instagram-app": "apps/instagram-app",
+		"instagram-app-e2e": "apps/instagram-app-e2e",
+		"instagram-pwa": "apps/instagram-pwa",
+		"instagram-pwa-e2e": "apps/instagram-pwa-e2e"
+	}
 }
