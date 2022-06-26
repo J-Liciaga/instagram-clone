@@ -1,7 +1,9 @@
 import * as React from "react";
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 
-const IndexScreen: React.FC = (): React.ReactElement => {
+const IndexScreen: React.FC = ({ navigation }): React.ReactElement => {
+	const navigationHandler = (screen: string) => navigation.navigate(screen);
+
 	return (
 		<View style={styles.container}>
 			<View style={styles.wrapper}>
@@ -9,12 +11,22 @@ const IndexScreen: React.FC = (): React.ReactElement => {
 					<Text style={styles.title}>Instagram</Text>
 				</View>
 				<View style={styles.section}>
-					<TouchableOpacity style={styles.button}>
+					<TouchableOpacity
+						style={styles.button}
+						onPress={() => {
+							navigationHandler("Signup");
+						}}
+					>
 						<Text style={styles.button_label}>
 							Create new account
 						</Text>
 					</TouchableOpacity>
-					<TouchableOpacity style={styles.link_button}>
+					<TouchableOpacity
+						style={styles.link_button}
+						onPress={() => {
+							navigationHandler("Login");
+						}}
+					>
 						<Text>Login</Text>
 					</TouchableOpacity>
 				</View>

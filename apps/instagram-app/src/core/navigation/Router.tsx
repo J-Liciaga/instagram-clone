@@ -6,7 +6,7 @@ import AuthNavigator from "./_AuthNavigation";
 const Stack = createNativeStackNavigator();
 
 const Router: React.FC = (): React.ReactElement => {
-	const auth = false;
+	const auth = true;
 
 	return (
 		<Stack.Navigator

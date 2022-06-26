@@ -1,6 +1,10 @@
 import * as React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { IndexScreen, LoginScreen, SignupScreen } from "../../screens/auth";
+import {
+	IndexScreen,
+	LoginScreen,
+	SignupScreen,
+} from "@instagram-app/screens/auth";
 
 const Stack = createNativeStackNavigator();
 
